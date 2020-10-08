@@ -12,7 +12,7 @@
 #--- Entre o cabeçalho e o menu e entre o menu e o rodapé deverá ter espaçamento de 3 linhas
 #--- Deve ser utilizado os caracteres especiais de quebra de linha e de tabulação
 
-opcao=int(input(F'''
+opcao=int(input(f'''
 {"*"*5} CADASTRO DE PESSOAS PARA EMPRESA PYTHONS{"*"*5}
 
 

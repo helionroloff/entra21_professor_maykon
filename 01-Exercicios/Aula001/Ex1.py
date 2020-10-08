@@ -5,11 +5,11 @@
 #--- Cada dado deve ser impresso em uma linha diferente
 #--- O salário deve ser de tipo flutuante
 
-nome = 'Raul'
-sobrenome = 'Silveira'
-cpf = '03859258462'
-rg = '6385372'
-salario = 2.899
+nome = input('INFORME SEU NOME: ')
+sobrenome = input('INFORME SEU SOBRENOME: ')
+cpf = input('INFORME SEU CPF: ')
+rg = input('INFORME SEU RG: ')
+salario = float(input('INFORME SEU SALÁRIO: '))
 
 print('''Funcionario:
 Nome: {}
