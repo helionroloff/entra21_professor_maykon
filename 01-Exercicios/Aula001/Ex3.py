@@ -25,4 +25,10 @@ Cumprimentou-me, sentou-se ao pé de mim, falou da Lua e dos ministros, e
 acabou recitando-me versos. A viagem era curta, e os versos pode ser que não
 fossem inteiramente maus. Sucedeu, porém, que, como eu estava cansado,
 fechei os olhos três ou quatro vezes; tanto bastou para que ele interrompesse a
-leitura e metesse os versos no bolso.”'''.format(titulo,edicao,autor,data_de_publicacao))
+leitura e metesse os versos no bolso.
+- Continue, disse eu acordando.
+- Já acabei, murmurou ele.
+- São muito bonitos.
+Vi-lhe fazer um gesto para tirá-los outra vez do bolso, mas não passou do gesto;
+estava amuado. No dia seguinte entrou a dizer de mim nomes feios, e acabou alcunhando-me Dom
+Casmurro.”'''.format(titulo,edicao,autor,data_de_publicacao))
