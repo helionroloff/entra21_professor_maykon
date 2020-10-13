@@ -8,7 +8,9 @@
 #--- A função deve ser salva em um arquivo diferente do arquivo principal onde será chamada
 pessoas =[]
 
+
 def cadastro_pessoa(nome, sobrenome, idade):
+  banco_pessoas = open('banco_pessoas.txt','a')
   cadastro = {}
   cadastro['nome'] = nome
   cadastro['sobrenome'] = sobrenome
@@ -20,6 +22,8 @@ def cadastro_pessoa(nome, sobrenome, idade):
     pessoas.append(cadastro)
     print(5*'-','CADASTRO REALIZADO COM SUCESSO',5*'-')
     print('O SEU ID É:',cadastro['id'] )
+    banco_pessoas.write(f"{cadastro['nome']};{cadastro['sobrenome']};{cadastro['idade']};{cadastro['id']}\n")
+    banco_pessoas.close()
     return cadastro['id']
   else:
     print('Idade incompatível')

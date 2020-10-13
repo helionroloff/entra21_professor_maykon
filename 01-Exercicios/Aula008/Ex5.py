@@ -7,8 +7,6 @@
 #                com seus respectivos endereços utilizando as funções do ex3 e ex4
 
 
-
-
 #variaveis em escopo global:
 from Ex1 import pessoas
 from Ex2 import enderecos

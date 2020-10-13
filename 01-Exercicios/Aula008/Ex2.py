@@ -7,7 +7,9 @@
 #--- A função deve ser salva em um arquivo diferente do arquivo principal onde será chamada
 enderecos =[]
 
+
 def cadastro_enderecos(id_endereco,rua,numero,complemento,bairro,cidade,estado):
+    banco_enderecos = open('banco_enderecos.txt','a')
     endereco = {}
     endereco['id'] = id_endereco
     endereco['rua'] = rua
@@ -16,6 +18,8 @@ def cadastro_enderecos(id_endereco,rua,numero,complemento,bairro,cidade,estado):
     endereco['bairro'] = bairro
     endereco['cidade'] = cidade
     endereco['estado'] = estado
+    banco_enderecos.write(f"{endereco['id']};{endereco['rua']};{endereco['numero']};{endereco['complemento']};{endereco['bairro']};{endereco['cidade']};{endereco['estado']}\n")
+    banco_enderecos.close()
     enderecos.append(endereco)
     print('CADASTRO REALIZADO COM SUCESSO')
 
