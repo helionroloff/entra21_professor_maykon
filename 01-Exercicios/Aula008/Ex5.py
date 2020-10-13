@@ -55,7 +55,7 @@ while opcao != '6':
             bairro = input('Informe o bairro: ').strip().title()
             cidade = input('Informe a cidade: ').strip().title()
             estado = input('Informe o estado: ').strip().title()
-            if rua == '' or numero == '' or complemento == '' or bairro == '' or cidade == '' or bairro == '' or estado == '':
+            if rua == '' or numero == '' or complemento == '' or bairro == '' or cidade == '' or estado == '':
                 print('Dados em branco, refaça o cadastro de endereço\n')
                 
             else:
