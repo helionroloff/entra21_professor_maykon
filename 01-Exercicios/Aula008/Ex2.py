@@ -23,5 +23,3 @@ def cadastro_enderecos(id_endereco,rua,numero,complemento,bairro,cidade,estado):
     enderecos.append(endereco)
     print('CADASTRO REALIZADO COM SUCESSO')
 
-
-    

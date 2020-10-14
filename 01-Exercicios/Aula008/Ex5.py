@@ -17,8 +17,8 @@ opcao = '0'
 #importando funções de outros arquivos:
 from Ex1 import cadastro_pessoa
 from Ex2 import cadastro_enderecos
-from Ex3 import pessoas_cadastradas , pessoas_por_id
-from Ex4 import enderecos_cadastrados , enderecos_por_id
+from Ex3 import pessoas_cadastradas , pessoas_por_id , pessoa_por_id_arquivo , pessoas_cadastradas_arquivo
+from Ex4 import enderecos_cadastrados , enderecos_por_id , enderecos_cadastrados_arquivo , endereco_por_id_arquivo
 
 #inicio do programa:
 while opcao != '6':               
@@ -40,10 +40,11 @@ while opcao != '6':
         sobrenome = input('Digite seu sobrenome: ').strip().title()
         idade = int(input('Digite sua idade: '))
         print('\n')
-        id_pessoa = int(cadastro_pessoa(nome, sobrenome, idade))
-        
-        
-        # cadastro de dados residenciais
+        if idade >= 18:
+            id_pessoa = int(cadastro_pessoa(nome, sobrenome, idade))
+        else:
+            id_pessoa < 18
+            print('Idade Menor de 18 anos')
         vazio = True
         while vazio == True:
             id_endereco = id_pessoa
@@ -63,10 +64,12 @@ while opcao != '6':
       
 
     elif opcao == '2':
+        pessoas_cadastradas_arquivo()
         pessoas_cadastradas(pessoas)
 
 
     elif opcao == '3':
+        pessoa_por_id_arquivo()
         pessoas_por_id(pessoas)
         
 
@@ -75,6 +78,7 @@ while opcao != '6':
         
 
     elif opcao == '5':
+        endereco_por_id_arquivo()
         enderecos_por_id(enderecos)
             
     
