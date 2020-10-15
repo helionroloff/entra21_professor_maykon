@@ -10,6 +10,7 @@ pessoas =[]
 
 
 def cadastro_pessoa(nome, sobrenome, idade):
+  open('banco_pessoas.txt','w')
   banco_pessoas = open('banco_pessoas.txt','a')
   cadastro = {}
   cadastro['nome'] = nome

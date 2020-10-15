@@ -9,6 +9,7 @@ enderecos =[]
 
 
 def cadastro_enderecos(id_endereco,rua,numero,complemento,bairro,cidade,estado):
+    open('banco_enderecos.txt','w')
     banco_enderecos = open('banco_enderecos.txt','a')
     endereco = {}
     endereco['id'] = id_endereco
