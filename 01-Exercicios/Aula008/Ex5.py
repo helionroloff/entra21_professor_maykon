@@ -74,6 +74,7 @@ while opcao != '6':
         
 
     elif opcao == '4':
+        enderecos_cadastrados_arquivo()
         enderecos_cadastrados(enderecos)
         
 
